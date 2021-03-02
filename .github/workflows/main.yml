@@ -19,7 +19,7 @@ jobs:
         - name: send telemessage
           uses: appleboy/telegram-action@master
           with:
-             to: ${{ secrets.TELEGRAM_TO }}
+             to: ${{ pasha_ghub_bot }}
              token: ${{ secrets.TELEGRAM_TOKEN }}
              message: ${{ github.workflow }}  work is done!
              debug: true
